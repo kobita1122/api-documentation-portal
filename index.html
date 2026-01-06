@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>API Documentation Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>API Documentation</h1>
+
+<nav>
+  <button onclick="show('auth')">Auth</button>
+  <button onclick="show('users')">Users</button>
+  <button onclick="show('payments')">Payments</button>
+</nav>
+
+<section id="auth" class="page">
+  <h2>Auth API</h2>
+  <pre>POST /auth/login
+POST /auth/register</pre>
+</section>
+
+<section id="users" class="page" style="display:none;">
+  <h2>User API</h2>
+  <pre>GET /users
+GET /users/:id</pre>
+</section>
+
+<section id="payments" class="page" style="display:none;">
+  <h2>Payment API</h2>
+  <pre>POST /payments
+GET /payments/:id</pre>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
